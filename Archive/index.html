@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Rumah IT Al Imam Nafi</title>
+    <style>
+        .program-card { transition: transform .2s ease, box-shadow .2s ease; }
+        .program-card:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.08) !important; }
+        .object-cover { object-fit: cover; width: 100%; height: 100%; }
+        #testimoni .carousel-item { min-height: 280px; }
+        .award-card { transition: transform .2s ease, box-shadow .2s ease; }
+        .award-card:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.08)!important; }
+        .news-card { transition: transform .2s ease, box-shadow .2s ease; }
+        .news-card:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.08)!important; }
+        .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .badge-soft { background: rgba(25,135,84,.1); color: #198754; border: 1px solid rgba(25,135,84,.15); }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand fs-4 fw-bold">
+                <img src="./images/logo-rumah-it.png" width="220">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center">
+                    <li class="nav-item pe-3">
+                        <a href="#" class="nav-link active fw-bold fs-5">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown pe-3">
+                        <a href="#" class="nav-link dropdown-toggle fs-5" data-bs-toggle="dropdown">
+                            Sekolah
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sd.html" class="dropdown-item">SD</a></li>
+                            <li><a href="smp.html" class="dropdown-item">SMP</a></li>
+                            <li><a href="sma.html" class="dropdown-item">SMA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a href="program.html" class="nav-link fs-5">Program</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a href="curriculum.html" class="nav-link fs-5">Kurikulum</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a href="galleries.html" class="nav-link fs-5">Galeri</a>
+                    </li>
+                    <li class="nav-item pe-3"><a href="news.html" class="nav-link fs-5">Berita</a></li>
+                    <li class="nav-item pe-3">
+                        <a href="contact.html" class="nav-link fs-5">Kontak</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a href="#" class="fs-5 btn btn-success btn-sm px-4" data-bs-toggle="modal" data-bs-target="#registerModal">Daftar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="fs-5 btn btn-primary btn-sm px-4" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Masuk
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-light py-5">
+        <div class="container d-flex flex-column flex-lg-row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="fw-bold display-5">Selamat Datang di<br><span class="text-success">Rumah IT Al Imam Naafi</span></h1>
+                <p class="lead mt-3">
+                    Mencetak generasi berilmu, berakhlak, dan siap menghadapi tantangan teknologi masa depan.
+                </p>
+                <a href="#" class="btn btn-success btn-lg px-4 me-2 mb-2 mb-md-0" data-bs-toggle="modal" data-bs-target="#registerModal">Daftar Sekarang</a>
+                <a href="#" class="btn btn-outline-success btn-lg px-4">Pelajari Lebih Lanjut</a>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0 text-center">
+                <img src="./images/hero.png" class="img-fluid rounded shadow" alt="Rumah IT Al Imam Naafi">
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Program Unggulan</h2>
+                <p class="text-muted mb-0">Suasana belajar nyata, kurikulum terstruktur, dan pembimbing berpengalaman.</p>
+            </div>
+            <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="card h-100 shadow-sm program-card">
+                    <div class="ratio ratio-16x9">
+                        <img src="./images/coding.png" alt="Siswa belajar coding di lab komputer" class="card-img-top object-cover" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Coding</h5>
+                        <p class="card-text text-muted">
+                            Belajar pemrograman dari dasar sampai membangun aplikasi web & mobile berbasis proyek.
+                        </p>
+                        <ul class="small mb-3">
+                            <li>Python, JavaScript, C++</li>
+                            <li>HTML, CSS, Bootstrap</li>
+                            <li>Project showcase tiap modul</li>
+                        </ul>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-primary btn-sm">Lihat Silabus</a>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Daftar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm program-card">
+                    <div class="ratio ratio-16x9">
+                        <img src="./images/tahfidz.png" alt="Kegiatan tahfidz dan muraja'ah Al-Qur'an" class="card-img-top object-cover" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tahfidz</h5>
+                        <p class="card-text text-muted">
+                            Hafalan bertahap, talaqqi, dan muraja'ah terstruktur dengan monitoring progres.
+                        </p>
+                        <ul class="small mb-3">
+                            <li>Target juz realistis</li>
+                            <li>Setoran & evaluasi berkala</li>
+                            <li>Pembimbing berpengalaman</li>
+                        </ul>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-success btn-sm">Jadwal Kelas</a>
+                            <a href="#" class="btn btn-outline-success btn-sm">Daftar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm program-card">
+                    <div class="ratio ratio-16x9">
+                        <img src="./images/english.png" alt="Sesi speaking Bahasa Inggris" class="card-img-top object-cover" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bahasa Inggris</h5>
+                        <p class="card-text text-muted">
+                            Speaking, Listening, Grammar, dan Vocabulary dengan konteks IT & presentasi.
+                        </p>
+                        <ul class="small mb-3">
+                            <li>Conversation berbasis proyek</li>
+                            <li>Grammar essentials</li>
+                            <li>Latihan presentasi</li>
+                        </ul>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-warning btn-sm text-white">Materi & Level</a>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Daftar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-outline-secondary">Lihat semua program</a>
+            </div>
+        </div>
+    </section>
+    <section id="testimoni" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <span class="badge bg-success-subtle text-success border border-success-subtle mb-2">Apa Kata Mereka</span>
+                <h2 class="fw-bold">Testimoni Wali Murid & Alumni</h2>
+                <p class="text-muted mb-0">Cerita nyata tentang dampak pembelajaran di Rumah IT Al Imam Nafi'.</p>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-7">
+                    <div id="testimonialCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-4 shadow-sm">
+                            <div class="carousel-item active p-4 bg-white">
+                                <div class="d-flex flex-column flex-md-row align-items-start gap-3">
+                                    <img src="./images/wali-1.jpg" class="rounded-circle border" width="64" height="64" alt="Foto Wali Murid" loading="lazy">
+                                    <div>
+                                    <div class="d-flex align-items-center gap-2 mb-1">
+                                        <strong>Nelly S.R</strong>
+                                        <span class="text-muted">• Wali dari Rahlil Rasyidan (SMP)</span>
+                                    </div>
+                                    <div class="text-warning mb-2">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="mb-0 fs-6">
+                                        "Anak saya jadi semangat belajar coding dan punya jadwal muraja'ah yang disiplin. 
+                                        Progress-nya terlihat setiap minggu dan bulan."
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-4 bg-white">
+                                <div class="d-flex flex-column flex-md-row align-items-start gap-3">
+                                    <img src="./images/alumni-1.png" class="rounded-circle border" width="64" height="64" alt="Foto Alumni" loading="lazy">
+                                    <div>
+                                    <div class="d-flex align-items-center gap-2 mb-1">
+                                        <strong>Muhammad Iqbal</strong>
+                                        <span class="text-muted">• Alumni</span>
+                                    </div>
+                                    <div class="text-warning mb-2">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <p class="mb-0 fs-6">
+                                        "Kelas Bahasa Inggris-nya praktis. Saya terbantu saat presentasi project IT pakai bahasa Inggris."
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-4 bg-white">
+                                <div class="d-flex flex-column flex-md-row align-items-start gap-3">
+                                    <img src="./images/wali-2.png" class="rounded-circle border" width="64" height="64" alt="Foto Wali Murid" loading="lazy">
+                                    <div>
+                                    <div class="d-flex align-items-center gap-2 mb-1">
+                                        <strong>Andi Santoso</strong>
+                                        <span class="text-muted">• Wali dari Kayla (SD)</span>
+                                    </div>
+                                    <div class="text-warning mb-2">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="mb-0 fs-6">
+                                        "Pengajar ramah dan progres anak terukur. Suka dengan laporan mingguan yang jelas targetnya."
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators position-static mt-3">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="h-100 rounded-4 border bg-white p-4 shadow-sm d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="d-flex align-items-center gap-3 mb-2">
+                        <div class="display-5 fw-bold">4.9</div>
+                        <div>
+                            <div class="text-warning">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            </div>
+                            <small class="text-muted">dari 320+ ulasan</small>
+                        </div>
+                        </div>
+                        <ul class="list-unstyled mt-3 mb-0 small">
+                        <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Mentor responsif & ramah</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Kurikulum berbasis proyek</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Laporan progres mingguan</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-success w-100">Lihat Semua Testimoni</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="prestasi" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle mb-2">Prestasi & Penghargaan</span>
+            <h2 class="fw-bold">Penghargaan & Pencapaian</h2>
+            <p class="text-muted mb-0">Validasi kualitas pembelajaran kami dari berbagai kompetisi dan institusi.</p>
+            </div>
+            <div class="row g-3 mb-4">
+            <div class="col-6 col-lg-3">
+                <div class="rounded-4 border p-4 text-center h-100">
+                <div class="fs-2 fw-bold">25+</div>
+                <div class="text-muted small">Medali Lomba IT</div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="rounded-4 border p-4 text-center h-100">
+                <div class="fs-2 fw-bold">15</div>
+                <div class="text-muted small">Alumni Berprestasi</div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="rounded-4 border p-4 text-center h-100">
+                <div class="fs-2 fw-bold">4</div>
+                <div class="text-muted small">Akreditasi/ Sertifikasi</div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="rounded-4 border p-4 text-center h-100">
+                <div class="fs-2 fw-bold">12</div>
+                <div class="text-muted small">Juara Tingkat Kota/Provinsi</div>
+                </div>
+            </div>
+            </div>
+            <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 award-card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-primary-subtle text-primary d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
+                            <i class="bi bi-trophy-fill fs-5"></i>
+                            </div>
+                            <div>
+                            <h6 class="mb-0">Juara 1 Web Development</h6>
+                            <small class="text-muted">Kompetisi IT Pelajar 2024</small>
+                            </div>
+                        </div>
+                        <span class="badge text-bg-primary">2024</span>
+                        </div>
+                        <p class="mb-0 mt-3 small text-muted">
+                        Tim siswa membangun aplikasi portal berita dengan performance & aksesibilitas unggul.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 award-card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-success-subtle text-success d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
+                            <i class="bi bi-award-fill fs-5"></i>
+                            </div>
+                            <div>
+                            <h6 class="mb-0">Sertifikasi Kurikulum Python</h6>
+                            <small class="text-muted">Lembaga Pelatihan Teknologi</small>
+                            </div>
+                        </div>
+                        <span class="badge text-bg-success">2023</span>
+                        </div>
+                        <p class="mb-0 mt-3 small text-muted">
+                        Kurikulum Python kami diakui karena praktik proyek nyata dan evaluasi berkala.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 award-card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-warning-subtle text-warning d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
+                            <i class="bi bi-mortarboard-fill fs-5"></i>
+                            </div>
+                            <div>
+                            <h6 class="mb-0">Best Teaching Practice</h6>
+                            <small class="text-muted">Forum Pendidikan Digital</small>
+                            </div>
+                        </div>
+                        <span class="badge text-bg-warning">2022</span>
+                        </div>
+                        <p class="mb-0 mt-3 small text-muted">
+                        Pendekatan "project-based learning" dan laporan progres mingguan dinilai efektif.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary">Lihat detail prestasi</a>
+            </div>
+        </div>
+    </section>
+    <section id="news" class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-md-between mb-3">
+                <div class="mb-3 mb-md-0">
+                    <span class="badge badge-soft mb-2"><i class="bi bi-newspaper me-1"></i>Update Terbaru</span>
+                    <h2 class="fw-bold mb-0">Berita & Kegiatan</h2>
+                    <small class="text-muted">Info terbaru dari Rumah IT Al Imam Nafi'.</small>
+                </div>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-success btn-sm"><i class="bi bi-funnel me-1"></i>Semua</button>
+                    <button class="btn btn-outline-success btn-sm">Kegiatan</button>
+                    <button class="btn btn-outline-success btn-sm">Prestasi</button>
+                    <button class="btn btn-outline-success btn-sm">Pengumuman</button>
+                </div>
+            </div>
+            <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <article class="card h-100 shadow-sm border-0 news-card">
+                        <div class="ratio ratio-16x9">
+                            <img src="./images/news-1.jpg" alt="Workshop Web Development" class="object-cover rounded-top" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="badge text-bg-success">Kegiatan</span>
+                                <small class="text-muted"><i class="bi bi-calendar-event me-1"></i> 12 Sep 2025</small>
+                            </div>
+                            <h5 class="card-title mb-2">Workshop: Membangun Portal Berita dengan Bootstrap</h5>
+                            <p class="card-text text-muted line-clamp-3">
+                                Santri mempraktikkan pembuatan halaman responsif, komponen card, carousel, serta optimasi gambar.
+                                Di akhir sesi, tiap tim mempresentasikan hasil proyek mini.
+                            </p>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <a href="#" class="btn btn-success btn-sm">Baca Selengkapnya</a>
+                                <div class="d-flex gap-2">
+                                    <span class="badge rounded-pill text-bg-light"><i class="bi bi-hash me-1"></i>bootstrap</span>
+                                    <span class="badge rounded-pill text-bg-light"><i class="bi bi-hash me-1"></i>project</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 shadow-sm border-0 news-card">
+                        <div class="ratio ratio-16x9">
+                            <img src="./images/news-2.jpg" alt="Pengumuman Penerimaan Santri Baru" class="object-cover rounded-top" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="badge text-bg-primary">Pengumuman</span>
+                                <small class="text-muted"><i class="bi bi-calendar-event me-1"></i> 05 Sep 2025</small>
+                            </div>
+                            <h5 class="card-title mb-2">Penerimaan Santri Baru Gelombang II Dibuka</h5>
+                            <p class="card-text text-muted line-clamp-3">
+                                Pendaftaran gelombang II resmi dibuka. Tersedia jalur beasiswa untuk program Coding & Tahfidz.
+                                Informasi syarat, jadwal, dan alur pendaftaran ada di tautan berikut.
+                            </p>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <a href="#" class="btn btn-primary btn-sm">Detail Pendaftaran</a>
+                                <div class="d-flex gap-2">
+                                    <span class="badge rounded-pill text-bg-light"><i class="bi bi-hash me-1"></i>admission</span>
+                                    <span class="badge rounded-pill text-bg-light"><i class="bi bi-hash me-1"></i>scholarship</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 shadow-sm border-0 news-card">
+                        <div class="ratio ratio-16x9">
+                            <img src="./images/news-3.jpg" alt="Prestasi Lomba IT" class="object-cover rounded-top" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="badge text-bg-warning text-dark">Prestasi</span>
+                                <small class="text-muted"><i class="bi bi-calendar-event me-1"></i> 28 Agu 2025</small>
+                            </div>
+                            <h5 class="card-title mb-2">Juara 1 Kategori UI/UX di Tech Student Fair</h5>
+                            <p class="card-text text-muted line-clamp-3">
+                                Tim santri berhasil meraih peringkat pertama untuk desain antarmuka aplikasi pendidikan
+                                dengan fokus aksesibilitas dan pengalaman pengguna.
+                            </p>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <a href="#" class="btn btn-warning btn-sm text-white">Lihat Liputan</a>
+                                <div class="d-flex gap-2">
+                                    <span class="badge rounded-pill text-bg-light"><i class="bi bi-hash me-1"></i>uiux</span>
+                                    <span class="badge rounded-pill text-bg-light"><i class="bi bi-hash me-1"></i>competition</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-secondary">
+                    <i class="bi bi-archive me-1"></i> Arsip Berita
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light pt-5 border-top">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./images/rti-logo-vertical-blue.png" alt="Rumah IT Al Imam Nafi" style="height:100px">
+                    </div>
+                    <p class="text-muted mb-3">
+                        Rumah IT Al Imam Nafi adalah Sekolah IT yang berfokus pada
+                        pemrograman (Frontend & Backend), Digital Marketing, Desain Grafis, dan Multimedia.
+                        Alumni kami telah tersebar di berbagai sekolah & kampus.
+                    </p>
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./images/google-partner.png" alt="Google Partner" style="height:48px">
+                        <img src="./images/adobe-certified.png" alt="Adobe Certified Associate" style="height:48px">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-semibold mb-2">Kantor Jakarta</h6>
+                    <p class="mb-1 small text-muted">
+                        <i class="bi bi-geo-alt me-1 text-primary"></i>
+                        <a class="text-decoration-underline" href="#" target="_blank" rel="noopener">Lihat Google Maps</a>
+                    </p>
+                    <p class="small text-muted mb-2">
+                        Ruko Permata Regensi Blok B-18, Jalan Haji Kelik, Srengseng, Kembangan, Jakarta Barat 11630 <br>
+                        (Depan Hutan Kota Srengseng)
+                    </p>
+                    <p class="small mb-3">
+                        <span class="text-muted">Telp:</span>
+                        <a href="tel:+622158908355" class="text-decoration-none"> (021) 5890-8355</a>,
+                        <a href="https://wa.me/6281299333913" class="text-decoration-none"> 0812-9933-3913</a>
+                    </p>
+                    <h6 class="fw-semibold mb-2">Kantor Depok</h6>
+                    <p class="mb-1 small text-muted">
+                        <i class="bi bi-geo-alt me-1 text-primary"></i>
+                        <a class="text-decoration-underline" href="#" target="_blank" rel="noopener">Lihat Google Maps</a>
+                    </p>
+                    <p class="small text-muted mb-2">
+                        Ruko Jalan Kartini Raya No. 53, Pancoran Mas, Depok 16436 <br>
+                        (±5 Menit dari Kantor Walikota Depok)
+                    </p>
+                    <p class="small mb-0">
+                        <span class="text-muted">Telp:</span>
+                        <a href="tel:+622177207657" class="text-decoration-none"> (021) 7720-7657</a>,
+                        <a href="https://wa.me/6281299333210" class="text-decoration-none"> 0812-9933-3210</a>
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-semibold mb-2">Customer Service</h6>
+                    <ul class="list-unstyled small mb-3">
+                        <li class="mb-1">CS #1:
+                            <a href="https://wa.me/6281993666688" class="text-decoration-none">0819-9366-6688</a>
+                        </li>
+                        <li class="mb-1">CS #2:
+                            <a href="https://wa.me/6281213600111" class="text-decoration-none">0812-1360-0111</a>
+                        </li>
+                        <li class="mb-1">CS #3:
+                            <a href="https://wa.me/6281299333210" class="text-decoration-none">0812-9933-3210</a>
+                        </li>
+                        <li class="mb-1">CS #4:
+                            <a href="https://wa.me/6281299333913" class="text-decoration-none">0812-9933-3913</a>
+                        </li>
+                        <li class="mt-2">
+                            <i class="bi bi-envelope me-1"></i>
+                            <a href="mailto:info@rumahit.id" class="text-decoration-none">info@rumahit.id</a>
+                        </li>
+                    </ul>
+                    <h6 class="fw-semibold mb-2">Ikuti Kami</h6>
+                    <div class="d-flex gap-3 fs-5">
+                        <a class="link-dark" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a class="link-dark" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a class="link-dark" href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a class="link-dark" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center pb-4">
+                <p class="small text-muted mb-2 mb-md-0">
+                    Copyrights © 2013-2025 <strong>Rumah IT Al Imam Nafi'</strong>. All rights reserved.
+                </p>
+                <a href="#" class="small link-secondary text-decoration-none">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <!-- <div class="modal-dialog modal-dialog-centered"> -->
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="loginModalLabel">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> Masuk ke Akun
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <form id="loginForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="loginEmail" placeholder="nama@contoh.com" required>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">Kata Sandi</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="loginPassword" placeholder="••••••••" minlength="6" required>
+                                        <button class="btn btn-outline-secondary" type="button" id="togglePass" aria-label="Tampilkan/lihat password">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                        <div class="invalid-feedback">Minimal 6 karakter.</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Ingat saya</label>
+                                    </div>
+                                    <a href="#" class="small text-decoration-none" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Lupa kata sandi?</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i> Masuk
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <p class="mb-0 small text-center">Belum punya akun?
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#registerModal">Daftar sekarang</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <!-- <div class="modal-dialog modal-dialog-centered"> -->
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="registerModalLabel">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> Buat Akun Baru
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <form id="registerForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="registerFullname" class="form-label">Fullname</label>
+                                    <input type="text" class="form-control" id="registerFullname" placeholder="Nama Lengkap" required>
+                                    <div class="invalid-feedback">Masukkan Fullname yang valid.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="registerEmail" placeholder="nama@contoh.com" required>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerPassword" class="form-label">Kata Sandi</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="registerPassword" placeholder="••••••••" minlength="6" required>
+                                        <button class="btn btn-outline-secondary" type="button" id="togglePass" aria-label="Tampilkan/lihat password">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                        <div class="invalid-feedback">Minimal 6 karakter.</div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i> Daftar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <p class="mb-0 small text-center">Sudah punya akun?
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk sekarang</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="forgotPasswordModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <!-- <div class="modal-dialog modal-dialog-centered"> -->
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="forgotPasswordModalLabel">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> Reset Password
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <form id="forgotPasswordForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="forgotPasswordEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="forgotPasswordEmail" placeholder="nama@contoh.com" required>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i> Kirim Password Baru Ke Email
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <p class="mb-0 small text-center">Sudah punya akun?
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk sekarang</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

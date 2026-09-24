@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Pricing — Rumah IT Al Imam Nafi</title>
+    <style>
+        .pricing-header { text-align: center; padding: 4rem 1rem; background-color: #f8f9fa; }
+        .card-pricing { border: 1px solid #dee2e6; border-radius: 1rem; transition: transform .3s ease, box-shadow .3s ease; }
+        .card-pricing:hover { transform: translateY(-5px); box-shadow: 0 1rem 2rem rgba(0,0,0,.1); }
+        .card-pricing .card-body { padding: 2rem; }
+        .price { font-size: 2.5rem; font-weight: bold; }
+        .badge-feature { background: #198754; color: #fff; border-radius: .25rem; padding: .25em .5em; font-size: .8rem; }
+        .most-popular { position: absolute; top: -1rem; right: -1rem; background: #198754; color: #fff; padding: .5rem 1rem; border-radius: .5rem 0 0 .5rem; font-weight: bold; }
+        .btn-pricing { width: 100%; font-weight: bold; }
+        .card-pricing {
+            border-radius: .75rem;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+        .card-pricing:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.08) !important;
+        }
+        .most-popular {
+            font-size: .8rem;
+            border-radius: .5rem;
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand fs-4 fw-bold">
+                <img src="./images/logo-rumah-it.png" width="220" alt="Rumah IT Al Imam Nafi">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center">
+                    <li class="nav-item pe-3"><a href="index.html" class="nav-link fs-5">Beranda</a></li>
+                    <li class="nav-item dropdown pe-3">
+                        <a href="#" class="nav-link dropdown-toggle fs-5" data-bs-toggle="dropdown">Sekolah</a>
+                         <ul class="dropdown-menu">
+                            <li><a href="sd.html" class="dropdown-item">SD</a></li>
+                            <li><a href="smp.html" class="dropdown-item">SMP</a></li>
+                            <li><a href="sma.html" class="dropdown-item">SMA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item pe-3"><a href="program.html" class="nav-link fs-5">Program</a></li>
+                    <li class="nav-item pe-3"><a href="curriculum.html" class="nav-link active fw-bold fs-5">Kurikulum</a></li>
+                    <li class="nav-item pe-3"><a href="galleries.html" class="nav-link fs-5">Galeri</a></li>
+                    <li class="nav-item pe-3"><a href="news.html" class="nav-link fs-5">Berita</a></li>
+                     <li class="nav-item pe-3"><a href="contact.html" class="nav-link fs-5">Contact</a></li>
+                    <li class="nav-item pe-3"><a href="#" class="fs-5 btn btn-success btn-sm px-4" data-bs-toggle="modal" data-bs-target="#registerModal">Daftar</a></li>
+                    <li class="nav-item"><a href="#" class="fs-5 btn btn-primary btn-sm px-4" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="pricing-header">
+        <div class="container">
+            <h1 class="fw-bold display-6">Pilih Paket Belajar</h1>
+            <p class="text-muted">Nikmati akses kursus dan materi sesuai kebutuhanmu. Gratis untuk mencoba!</p>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold display-6">Pilih Paket Sekolah</h1>
+                <p class="text-muted">Pilih jenjang sesuai kebutuhan belajar anak Anda.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 card-pricing text-center shadow-sm position-relative">
+                        <div class="most-popular position-absolute top-0 start-50 translate-middle badge bg-success text-white px-3 py-2">Basics</div>
+                        <div class="card-body d-flex flex-column mt-3">
+                            <h5 class="card-title fw-bold">SD</h5>
+                            <p class="price text-success">Rp 1,850,000</p>
+                            <p class="text-muted">Cocok untuk anak belajar dasar</p>
+                            <ul class="list-unstyled mt-3 mb-4 text-start">
+                                <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Materi dasar pemrograman</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Proyek mini sederhana</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Forum diskusi anak-anak</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Percakapan Bahasa Ingris dasar anak-anak</li>
+                            </ul>
+                            <button class="btn btn-outline-success mt-auto">Daftar SD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 card-pricing text-center shadow-sm position-relative">
+                        <div class="most-popular position-absolute top-0 start-50 translate-middle badge bg-primary text-white px-3 py-2">Most Popular</div>
+                        <div class="card-body d-flex flex-column mt-3">
+                            <h5 class="card-title fw-bold">SMP</h5>
+                            <p class="price text-success">Rp 1,850,000</p>
+                            <p class="text-muted">Akses penuh materi</p>
+                            <ul class="list-unstyled mt-3 mb-4 text-start">
+                                <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Semua materi SD + SMP</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>5 proyek mini</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Sertifikat resmi</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Bimbingan mentor</li>
+                            </ul>
+                            <button class="btn btn-dark mt-auto">Daftar SMP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 card-pricing text-center shadow-sm position-relative">
+                        <div class="most-popular position-absolute top-0 start-50 translate-middle badge bg-warning text-white px-3 py-2">Recommended</div>
+                        <div class="card-body d-flex flex-column mt-3">
+                            <h5 class="card-title fw-bold">SMA</h5>
+                            <p class="price text-success">Rp 1,850,000</p>
+                            <p class="text-muted">Kurikulum lengkap untuk SMA</p>
+                            <ul class="list-unstyled mt-3 mb-4 text-start">
+                                <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Semua materi SD, SMP & SMA</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Proyek tak terbatas</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Sertifikat tim & individu</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Dukungan prioritas</li>
+                            </ul>
+                            <button class="btn btn-dark mt-auto">Daftar SMA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light pt-5 border-top">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./images/rti-logo-vertical-blue.png" alt="Rumah IT Al Imam Nafi" style="height:100px">
+                    </div>
+                    <p class="text-muted mb-3">
+                        Rumah IT Al Imam Nafi adalah Sekolah IT yang berfokus pada
+                        pemrograman (Frontend & Backend), Digital Marketing, Desain Grafis, dan Multimedia.
+                        Alumni kami telah tersebar di berbagai sekolah & kampus.
+                    </p>
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./images/google-partner.png" alt="Google Partner" style="height:48px">
+                        <img src="./images/adobe-certified.png" alt="Adobe Certified Associate" style="height:48px">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-semibold mb-2">Kantor Jakarta</h6>
+                    <p class="mb-1 small text-muted">
+                        <i class="bi bi-geo-alt me-1 text-primary"></i>
+                        <a class="text-decoration-underline" href="#" target="_blank" rel="noopener">Lihat Google Maps</a>
+                    </p>
+                    <p class="small text-muted mb-2">
+                        Ruko Permata Regensi Blok B-18, Jalan Haji Kelik, Srengseng, Kembangan, Jakarta Barat 11630 <br>
+                        (Depan Hutan Kota Srengseng)
+                    </p>
+                    <p class="small mb-3">
+                        <span class="text-muted">Telp:</span>
+                        <a href="tel:+622158908355" class="text-decoration-none"> (021) 5890-8355</a>,
+                        <a href="https://wa.me/6281299333913" class="text-decoration-none"> 0812-9933-3913</a>
+                    </p>
+                    <h6 class="fw-semibold mb-2">Kantor Depok</h6>
+                    <p class="mb-1 small text-muted">
+                        <i class="bi bi-geo-alt me-1 text-primary"></i>
+                        <a class="text-decoration-underline" href="#" target="_blank" rel="noopener">Lihat Google Maps</a>
+                    </p>
+                    <p class="small text-muted mb-2">
+                        Ruko Jalan Kartini Raya No. 53, Pancoran Mas, Depok 16436 <br>
+                        (±5 Menit dari Kantor Walikota Depok)
+                    </p>
+                    <p class="small mb-0">
+                        <span class="text-muted">Telp:</span>
+                        <a href="tel:+622177207657" class="text-decoration-none"> (021) 7720-7657</a>,
+                        <a href="https://wa.me/6281299333210" class="text-decoration-none"> 0812-9933-3210</a>
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-semibold mb-2">Customer Service</h6>
+                    <ul class="list-unstyled small mb-3">
+                        <li class="mb-1">CS #1:
+                            <a href="https://wa.me/6281993666688" class="text-decoration-none">0819-9366-6688</a>
+                        </li>
+                        <li class="mb-1">CS #2:
+                            <a href="https://wa.me/6281213600111" class="text-decoration-none">0812-1360-0111</a>
+                        </li>
+                        <li class="mb-1">CS #3:
+                            <a href="https://wa.me/6281299333210" class="text-decoration-none">0812-9933-3210</a>
+                        </li>
+                        <li class="mb-1">CS #4:
+                            <a href="https://wa.me/6281299333913" class="text-decoration-none">0812-9933-3913</a>
+                        </li>
+                        <li class="mt-2">
+                            <i class="bi bi-envelope me-1"></i>
+                            <a href="mailto:info@rumahit.id" class="text-decoration-none">info@rumahit.id</a>
+                        </li>
+                    </ul>
+                    <h6 class="fw-semibold mb-2">Ikuti Kami</h6>
+                    <div class="d-flex gap-3 fs-5">
+                        <a class="link-dark" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a class="link-dark" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a class="link-dark" href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a class="link-dark" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center pb-4">
+                <p class="small text-muted mb-2 mb-md-0">
+                    Copyrights © 2013-2025 <strong>Rumah IT Al Imam Nafi'</strong>. All rights reserved.
+                </p>
+                <a href="#" class="small link-secondary text-decoration-none">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <!-- <div class="modal-dialog modal-dialog-centered"> -->
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="loginModalLabel">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> Masuk ke Akun
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <form id="loginForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="loginEmail" placeholder="nama@contoh.com" required>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">Kata Sandi</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="loginPassword" placeholder="••••••••" minlength="6" required>
+                                        <button class="btn btn-outline-secondary" type="button" id="togglePass" aria-label="Tampilkan/lihat password">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                        <div class="invalid-feedback">Minimal 6 karakter.</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Ingat saya</label>
+                                    </div>
+                                    <a href="#" class="small text-decoration-none" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Lupa kata sandi?</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i> Masuk
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <p class="mb-0 small text-center">Belum punya akun?
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#registerModal">Daftar sekarang</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <!-- <div class="modal-dialog modal-dialog-centered"> -->
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="registerModalLabel">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> Buat Akun Baru
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <form id="registerForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="registerFullname" class="form-label">Fullname</label>
+                                    <input type="text" class="form-control" id="registerFullname" placeholder="Nama Lengkap" required>
+                                    <div class="invalid-feedback">Masukkan Fullname yang valid.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="registerEmail" placeholder="nama@contoh.com" required>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerPassword" class="form-label">Kata Sandi</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="registerPassword" placeholder="••••••••" minlength="6" required>
+                                        <button class="btn btn-outline-secondary" type="button" id="togglePass" aria-label="Tampilkan/lihat password">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                        <div class="invalid-feedback">Minimal 6 karakter.</div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i> Daftar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <p class="mb-0 small text-center">Sudah punya akun?
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk sekarang</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="forgotPasswordModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <!-- <div class="modal-dialog modal-dialog-centered"> -->
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="forgotPasswordModalLabel">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> Reset Password
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <form id="forgotPasswordForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="forgotPasswordEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="forgotPasswordEmail" placeholder="nama@contoh.com" required>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i> Kirim Password Baru Ke Email
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <p class="mb-0 small text-center">Sudah punya akun?
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk sekarang</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function () {
+                const src = this.getAttribute('data-src') || this.querySelector('img').src;
+                const caption = this.getAttribute('data-caption') || '';
+                const img = document.getElementById('lightboxImage');
+                const cap = document.getElementById('lightboxCaption');
+                img.src = src;
+                img.alt = caption;
+                cap.textContent = caption;
+            });
+        });
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryCards = document.querySelectorAll('.gallery-card');
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+                galleryCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        function togglePassword(buttonId, inputId) {
+            const btn = document.getElementById(buttonId);
+            const input = document.getElementById(inputId);
+            if (!btn || !input) return;
+            btn.addEventListener('click', () => {
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    btn.querySelector('i').classList.remove('bi-eye'); btn.querySelector('i').classList.add('bi-eye-slash');
+                } else {
+                    input.type = 'password';
+                    btn.querySelector('i').classList.remove('bi-eye-slash'); btn.querySelector('i').classList.add('bi-eye');
+                }
+            });
+        }
+        togglePassword('togglePassLogin', 'loginPassword');
+        togglePassword('togglePassRegister', 'registerPassword');
+        (function () {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>

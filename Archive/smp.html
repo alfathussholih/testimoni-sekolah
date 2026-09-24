@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>SMP - Rumah IT Al Imam Nafi</title>
+    <style>
+        .program-card { transition: transform .2s ease, box-shadow .2s ease; }
+        .program-card:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.08) !important; }
+        /* object-fit adalah properti CSS yang menentukan bagaimana konten gambar atau video akan disesuaikan dengan elemen kontainer */
+        .object-cover { object-fit: cover; width: 100%; height: 100%; }
+        /* -webkit-line-clamp adalah properti CSS yang digunakan untuk membatasi jumlah baris teks yang ditampilkan */
+        /* -webkit-box-orient adalah properti CSS yang digunakan untuk menentukan orientasi kotak fleksibel */
+        /* overflow adalah properti CSS yang digunakan untuk menentukan apa yang terjadi jika konten melebihi ukuran elemen */
+        .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .badge-soft { background: rgba(25,135,84,.1); color: #198754; border: 1px solid rgba(25,135,84,.15); }
+        .teacher-card img { object-fit: cover; height: 220px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand fs-4 fw-bold">
+                <img src="./images/logo-rumah-it.png" width="220" alt="Rumah IT">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center">
+                    <li class="nav-item pe-3"><a href="index.html" class="nav-link fs-5">Beranda</a></li>
+                    <li class="nav-item dropdown pe-3">
+                        <a href="#" class="nav-link dropdown-toggle fs-5 active" data-bs-toggle="dropdown">Sekolah</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sd.html" class="dropdown-item">SD</a></li>
+                            <li><a href="smp.html" class="dropdown-item active">SMP</a></li>
+                            <li><a href="sma.html" class="dropdown-item">SMA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item pe-3"><a href="program.html" class="nav-link fs-5">Program</a></li>
+                    <li class="nav-item pe-3"><a href="curriculum.html" class="nav-link fs-5">Kurikulum</a></li>
+                    <li class="nav-item pe-3"><a href="galleries.html" class="nav-link fs-5">Galeri</a></li>
+                    <li class="nav-item pe-3"><a href="news.html" class="nav-link fs-5">Berita</a></li>
+                    <li class="nav-item pe-3"><a href="contact.html" class="nav-link fs-5">Kontak</a></li>
+                    <li class="nav-item pe-3"><a href="#" class="fs-5 btn btn-success btn-sm px-4" data-bs-toggle="modal" data-bs-target="#registerModal">Daftar</a></li>
+                    <li class="nav-item"><a href="#" class="fs-5 btn btn-primary btn-sm px-4" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="py-5 bg-light">
+        <div class="container d-flex flex-column flex-lg-row align-items-center gap-4">
+            <div class="col-lg-7">
+                <h1 class="display-5 fw-bold">SMP <span class="text-success">Rumah IT Al Imam Nafi</span></h1>
+                <p class="lead text-muted">Program SMP kami menggabungkan kurikulum nasional dengan penguatan literasi digital, tahfidz dasar, dan character building.</p>
+                <ul class="mb-3 small text-muted">
+                    <li>Usia: 12 - 15 tahun (Kelas 7 - 9)</li>
+                    <li>Kurikulum: Kurikulum Nasional + ICT & Project-Based Learning</li>
+                    <li>Fokus: Coding dasar, Bahasa Inggris kontekstual, Tahfidz & Akhlak</li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <a href="#pendaftaran" class="btn btn-success btn-lg">Daftar Sekarang</a>
+                    <a href="#kurikulum" class="btn btn-outline-success btn-lg">Lihat Kurikulum</a>
+                </div>
+            </div>
+            <div class="col-lg-5 text-center">
+                <img src="./images/smp.png" class="img-fluid rounded-5 border shadow-lg" alt="SMP Rumah IT">
+            </div>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Apa yang Dipelajari di SMP</h2>
+                <p class="text-muted mb-0">Kombinasi pelajaran akademik, keterampilan teknologi, dan pembinaan karakter.</p>
+            </div>
+            <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="card h-100 shadow-sm program-card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Coding & Computational Thinking</h5>
+                            <p class="card-text small text-muted">Pengenalan pemrograman (Scratch & Python dasar), logika, algoritma, dan proyek mini tiap semester.</p>
+                            <a href="#kurikulum" class="small text-decoration-none">Lihat detail kurikulum →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-light h-100 shadow-sm program-card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Bahasa Inggris</h5>
+                            <p class="card-text small text-muted">Praktik speaking & listening berbasis tugas (presentasi project, email, dan dokumentasi teknis sederhana).</p>
+                            <a href="#kurikulum" class="small text-decoration-none">Lihat level & materi →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm program-card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Tahfidz & Akhlak</h5>
+                            <p class="card-text small text-muted">Pembiasaan doa, hafalan surt, dan muatan akhlak sehari-hari disesuaikan dengan ritme siswa SMP.</p>
+                            <a href="#" class="small text-decoration-none">Program pembinaan →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="kurikulum" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Kurikulum & Silabus</h2>
+                <p class="text-muted mb-0">Silabus tiap kelas disusun untuk progres bertahap dan diakhiri dengan proyek keluaran.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-semibold">Kelas 7</h6>
+                            <ul class="small text-muted">
+                                <li>Dasar-dasar komputer & keamanan digital</li>
+                                <li>Pengenalan Scratch & block coding</li>
+                                <li>Bahasa Inggris: everyday conversation</li>
+                                <li>Tahfidz: target hafalan harian ringan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-semibold">Kelas 8</h6>
+                            <ul class="small text-muted">
+                                <li>Python dasar & problem solving</li>
+                                <li>Web fundamentals: HTML & CSS</li>
+                                <li>Bahasa Inggris: presenting basic projects</li>
+                                <li>Tahfidz & muatan akhlak</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-semibold">Kelas 9</h6>
+                            <ul class="small text-muted">
+                                <li>Web interaktif: JavaScript dasar</li>
+                                <li>Project-based learning: mini web app</li>
+                                <li>Bahasa Inggris: technical writing & pitching</li>
+                                <li>Persiapan lomba & showcase akhir</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#pendaftaran" class="btn btn-outline-success">Unduh Silabus (PDF)</a>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Pengajar & Pembimbing</h2>
+                <p class="text-muted mb-0">Tim pengajar kompeten dari bidang IT, pendidikan, dan keagamaan.</p>
+            </div>
+            <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="card h-100 teacher-card shadow-sm border-0">
+                        <img src="./images/teacher-1.jpg" class="card-img-top" alt="Pak Hammad">
+                        <div class="card-body">
+                            <h6 class="mb-1">Hammad</h6>
+                            <small class="text-muted">Guru IT - Coding & Robotics</small>
+                            <p class="mt-2 small text-muted">Berpengalaman mengajar pemrograman dasar dan lomba robotik tingkat pelajar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 teacher-card shadow-sm border-0">
+                        <img src="./images/teacher-2.jpg" class="card-img-top" alt="Bu Siti">
+                        <div class="card-body">
+                            <h6 class="mb-1">Siti Nur</h6>
+                            <small class="text-muted">Guru Bahasa Inggris</small>
+                            <p class="mt-2 small text-muted">Spesialis English for IT & public speaking untuk pelajar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 teacher-card shadow-sm border-0">
+                        <img src="./images/teacher-3.jpg" class="card-img-top" alt="Ustadz Aiman">
+                        <div class="card-body">
+                            <h6 class="mb-1">Ustadz Aiman</h6>
+                            <small class="text-muted">Pembimbing Tahfidz & Akhlak</small>
+                            <p class="mt-2 small text-muted">Pendamping spiritual & pengembang program pembiasaan santri.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Fasilitas</h2>
+                <p class="text-muted mb-0">Fasilitas dirancang agar siswa nyaman belajar & berkarya.</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="rounded-4 border p-3 text-center h-100">
+                        <i class="bi bi-laptop fs-2 mb-2"></i>
+                        <div class="fw-semibold">Lab Komputer</div>
+                        <small class="text-muted">PC & laptop modern</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="rounded-4 border p-3 text-center h-100">
+                        <i class="bi bi-collection-play fs-2 mb-2"></i>
+                        <div class="fw-semibold">Perpustakaan</div>
+                        <small class="text-muted">Referensi akademik & IT</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="rounded-4 border p-3 text-center h-100">
+                        <i class="bi bi-people fs-2 mb-2"></i>
+                        <div class="fw-semibold">Ruang Kelas Nyaman</div>
+                        <small class="text-muted">Ventilasi & tata ruang belajar</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="rounded-4 border p-3 text-center h-100">
+                        <i class="bi bi-award fs-2 mb-2"></i>
+                        <div class="fw-semibold">Program Ekstra</div>
+                        <small class="text-muted">Lomba, pelatihan & ekskul</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Testimoni Wali Murid SMP</h2>
+                <p class="text-muted mb-0">Pendapat orang tua tentang perkembangan anak selama belajar di SMP kami.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm p-4">
+                        <div class="d-flex gap-3 align-items-start">
+                            <img src="./images/wali-1.jpg" width="64" height="64" class="rounded-circle border" alt="Wali">
+                            <div>
+                                <strong>Rina M.</strong>
+                                <div class="text-muted small">• Wali dari Farhan (Kelas 8)</div>
+                                <p class="mb-0 small text-muted mt-2">"Perubahan sikap & disiplin Farhan terlihat. Program coding membuatnya lebih percaya diri di sekolah."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm p-4">
+                        <div class="d-flex gap-3 align-items-start">
+                            <img src="./images/wali-2.png" width="64" height="64" class="rounded-circle border" alt="Wali">
+                            <div>
+                                <strong>Budi S.</strong>
+                                <div class="text-muted small">• Wali dari Laila (Kelas 7)</div>
+                                <p class="mb-0 small text-muted mt-2">"Laporan mingguan dan pembimbing yang sabar sangat membantu proses belajar anak kami."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pendaftaran" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <h3 class="fw-bold">Pendaftaran & Biaya</h3>
+                    <p class="text-muted">Kami menyediakan jalur reguler dan beasiswa. Proses pendaftaran cepat dengan tahap: pendaftaran online, wawancara orang tua, dan tes kemampuan singkat untuk siswa.</p>
+                    <ul class="small text-muted">
+                        <li>Biaya pendaftaran: Rp 200.000 (non refundable)</li>
+                        <li>Biaya SPP bulanan: mulai Rp 600.000 (tergantung program)</li>
+                        <li>Beasiswa tersedia untuk siswa berprestasi</li>
+                    </ul>
+                    <a href="#" class="btn btn-success">Isi Form Pendaftaran</a>
+                </div>
+                <div class="col-lg-5">
+                    <div class="rounded-4 border p-3 text-center">
+                        <h5 class="mb-1">Open House</h5>
+                        <p class="small text-muted mb-2">Setiap Sabtu pertama tiap bulan — kunjungi untuk tur fasilitas & demo kelas.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Daftar Kunjungan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light pt-5 border-top">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h6 class="fw-semibold">Hubungi Kami</h6>
+                    <p class="small text-muted mb-1">Ruko Permata Regensi Blok B-18, Jalan Haji Kelik, Srengseng, Kembangan, Jakarta Barat 11630</p>
+                    <p class="small mb-0">Telp: <a href="tel:+622158908355" class="text-decoration-none">(021) 5890-8355</a> • CS: <a href="https://wa.me/6281299333913" class="text-decoration-none">0812-9933-3913</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-semibold">Jam Operasional</h6>
+                    <p class="small text-muted mb-0">Senin - Kamis: 08.00 - 16.00</p>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-semibold">Ikuti Kami</h6>
+                    <div class="d-flex gap-3 fs-5">
+                        <a class="link-dark" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a class="link-dark" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a class="link-dark" href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center pb-4">
+                <p class="small text-muted mb-2 mb-md-0">Copyrights © 2013-2025 <strong>Rumah IT Al Imam Nafi'</strong>.</p>
+                <a href="#" class="small link-secondary text-decoration-none">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <!-- <div class="modal-dialog modal-dialog-centered"> -->
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="loginModalLabel">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> Masuk ke Akun
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <form id="loginForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="loginEmail" placeholder="nama@contoh.com" required>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">Kata Sandi</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="loginPassword" placeholder="••••••••" minlength="6" required>
+                                        <button class="btn btn-outline-secondary" type="button" id="togglePass" aria-label="Tampilkan/lihat password">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                        <div class="invalid-feedback">Minimal 6 karakter.</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Ingat saya</label>
+                                    </div>
+                                    <a href="#" class="small text-decoration-none" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Lupa kata sandi?</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i> Masuk
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <p class="mb-0 small text-center">Belum punya akun?
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#registerModal">Daftar sekarang</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <!-- <div class="modal-dialog modal-dialog-centered"> -->
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="registerModalLabel">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> Buat Akun Baru
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <form id="registerForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="registerFullname" class="form-label">Fullname</label>
+                                    <input type="text" class="form-control" id="registerFullname" placeholder="Nama Lengkap" required>
+                                    <div class="invalid-feedback">Masukkan Fullname yang valid.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="registerEmail" placeholder="nama@contoh.com" required>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerPassword" class="form-label">Kata Sandi</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="registerPassword" placeholder="••••••••" minlength="6" required>
+                                        <button class="btn btn-outline-secondary" type="button" id="togglePass" aria-label="Tampilkan/lihat password">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                        <div class="invalid-feedback">Minimal 6 karakter.</div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i> Daftar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <p class="mb-0 small text-center">Sudah punya akun?
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk sekarang</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="forgotPasswordModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <!-- <div class="modal-dialog modal-dialog-centered"> -->
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="forgotPasswordModalLabel">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> Reset Password
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <form id="forgotPasswordForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="forgotPasswordEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="forgotPasswordEmail" placeholder="nama@contoh.com" required>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="bi bi-box-arrow-in-right me-1"></i> Kirim Password Baru Ke Email
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <p class="mb-0 small text-center">Sudah punya akun?
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk sekarang</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
